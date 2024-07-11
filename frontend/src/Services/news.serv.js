@@ -1,5 +1,5 @@
 import axios from "axios";
-const endpoint = "//35.244.40.220:8080";
+const endpoint = "https://recshorts.el.r.appspot.com";
 // const endpoint = "https://nirmalshah20519.pythonanywhere.com";
 
 export const getTodayNews = async () => {
