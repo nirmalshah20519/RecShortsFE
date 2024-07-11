@@ -1,5 +1,5 @@
 import axios from "axios";
-const endpoint = "http://35.244.40.220:8080";
+const endpoint = "//35.244.40.220:8080";
 // const endpoint = "https://nirmalshah20519.pythonanywhere.com";
 
 export const getTodayNews = async () => {
@@ -14,6 +14,7 @@ export const getTodayNews = async () => {
 };
 
 export const getSearchResults = async (q) => {
+  console.log(endpoint);
   return axios
     .get(endpoint + `/search?query=${q}`)
     .then((response) => {
@@ -35,4 +36,5 @@ export const getRecommendationsResults = async (q) => {
     });
 };
 
-export const defaultImage = 'https://res.cloudinary.com/medico-cloud/image/upload/v1720603121/RecShorts/Black_White_Illustrative_Modern_Camera_Studio_Icon_Logo_luu7ko.png'
+export const defaultImage =
+  "https://res.cloudinary.com/medico-cloud/image/upload/v1720603121/RecShorts/Black_White_Illustrative_Modern_Camera_Studio_Icon_Logo_luu7ko.png";
